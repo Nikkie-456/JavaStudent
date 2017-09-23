@@ -149,6 +149,36 @@ public class MyCollections {
         }
 
 
+      Car toyota= new Car();
+        toyota.setName("Axio");
+        toyota.setColor("Grey");
+      Car subaru = new Car();
+        subaru.setName("Legacy");
+        subaru.setColor("White");
+      Car nissan = new Car();
+        nissan.setName("Fuga");
+        nissan.setColor("Blue");
+
+        List<Car> vehicleDetails=new ArrayList<>();
+
+        vehicleDetails.add(toyota);
+        vehicleDetails.add(subaru);
+        vehicleDetails.add(nissan);
+
+        int cnt2 = 0;
+
+        while (cnt2 < vehicleDetails.size()) {
+            System.out.println("vehicleDetails##"+vehicleDetails.get(0).getName());
+            System.out.println("vehicleDetails##"+vehicleDetails.size());
+            cnt2++;
+        }
+
+        for (int p=0; p < vehicleDetails.size(); p++)
+        {
+            System.out.println("Item"+p+"\t Value:"+vehicleDetails.get(p).getName()+"\t Color:"+vehicleDetails.get(p).getColor());
+
+        }
+
 
 
 
