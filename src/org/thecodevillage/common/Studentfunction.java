@@ -9,6 +9,10 @@ public class Studentfunction {
         return x+y+z;
     }
 
+    public static int sum1(int x){
+        return x;
+    }
+
     public static int multiply(int a,int b) {
         return a * b;
     }
