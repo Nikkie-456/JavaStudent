@@ -1,5 +1,7 @@
 package src.org.thecodevillage.intro;
 
+import src.org.thecodevillage.common.Student1;
+import src.org.thecodevillage.common.Student_main;
 import src.org.thecodevillage.common.Studentfunction;
 
 import java.util.ArrayList;
@@ -18,6 +20,7 @@ public class MyCollections {
 
    static int marks[] =new int[10];
    static String name[]=new String[10];
+   static String Stud2[]=new String[10];
 
 
     public static void main (String[] args){
@@ -178,6 +181,10 @@ public class MyCollections {
             System.out.println("Item"+p+"\t Value:"+vehicleDetails.get(p).getName()+"\t Color:"+vehicleDetails.get(p).getColor());
 
         }
+
+
+
+
 
 
 
