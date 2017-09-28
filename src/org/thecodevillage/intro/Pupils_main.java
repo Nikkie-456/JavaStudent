@@ -79,58 +79,62 @@ public class Pupils_main {
 
         //Second Pupil
 
+        Scanner scanner2 = new Scanner(System.in);
+
         Pupils Pupil2 = new Pupils();
 
         System.out.println("Enter Second Student Name");
-        Pupil2.setName(scanner.nextLine());
+        Pupil2.setName(scanner2.nextLine());
 
         System.out.println("Enter Second Student Registration No");
-        Pupil2.setRegno(scanner.nextLine());
+        Pupil2.setRegno(scanner2.nextLine());
 
         System.out.println("Enter Second Student Date Of Birth");
-        Pupil2.setBirthDate(scanner.nextLine());
+        Pupil2.setBirthDate(scanner2.nextLine());
 
 
         System.out.println("Enter Second Student Course");
-        Pupil2.setCourse(scanner.nextLine());
+        Pupil2.setCourse(scanner2.nextLine());
 
         System.out.println("Enter Second Java Marks");
-        Pupil2.setJvMarks(scanner.nextInt());
+        Pupil2.setJvMarks(scanner2.nextInt());
 
         System.out.println("Enter Second Php Marks");
-        Pupil2.setPhMarks(scanner.nextInt());
+        Pupil2.setPhMarks(scanner2.nextInt());
 
         System.out.println("Enter Second Python Marks");
-        Pupil2.setPyMarks(scanner.nextInt());
+        Pupil2.setPyMarks(scanner2.nextInt());
 
         sum_1 = PupilFunctions.add(Pupil2.getJvMarks(),Pupil2.getPhMarks(),Pupil2.getPyMarks());
         avg_1 = PupilFunctions.avge(sum_1);
 
         //Third Pupil
 
+        Scanner scanner3 = new Scanner(System.in);
+
         Pupils Pupil3 = new Pupils();
 
         System.out.println("Enter Third Student Name");
-        Pupil3.setName(scanner.nextLine());
+        Pupil3.setName(scanner3.nextLine());
 
         System.out.println("Enter Third Student Registration No");
-        Pupil3.setRegno(scanner.nextLine());
+        Pupil3.setRegno(scanner3.nextLine());
 
         System.out.println("Enter Third Student Date Of Birth");
-        Pupil3.setBirthDate(scanner.nextLine());
+        Pupil3.setBirthDate(scanner3.nextLine());
 
 
         System.out.println("Enter Third Student Course");
-        Pupil3.setCourse(scanner.nextLine());
+        Pupil3.setCourse(scanner3.nextLine());
 
         System.out.println("Enter Third Java Marks");
-        Pupil3.setJvMarks(scanner.nextInt());
+        Pupil3.setJvMarks(scanner3.nextInt());
 
         System.out.println("Enter Third Php Marks");
-        Pupil3.setPhMarks(scanner.nextInt());
+        Pupil3.setPhMarks(scanner3.nextInt());
 
         System.out.println("Enter Third Python Marks");
-        Pupil3.setPyMarks(scanner.nextInt());
+        Pupil3.setPyMarks(scanner3.nextInt());
 
         sum_2 = PupilFunctions.add(Pupil3.getJvMarks(),Pupil3.getPhMarks(),Pupil3.getPyMarks());
         avg_2 = PupilFunctions.avge(sum_2);

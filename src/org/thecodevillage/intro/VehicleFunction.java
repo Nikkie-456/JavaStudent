@@ -1,10 +1,9 @@
 package src.org.thecodevillage.intro;
 
 /**
- * Created by Administrator on 9/24/2017.
+ * Created by Administrator on 9/26/2017.
  */
-public class PupilFunctions {
-
+public class VehicleFunction {
 
     public static int add(int x,int y,int z){
         return x+y+z;
@@ -40,4 +39,24 @@ public class PupilFunctions {
         return (sum/3);
     }
 
+    public static String grade(int marks) {
+        String grade="";
+
+        if (marks >= 80) {
+            grade ="A";
+        } else if (marks >= 70 && marks < 80) {
+            grade = "B";
+        }
+        else if ( marks >= 50 && marks < 60) {
+            grade = "C";
+        }
+        else if (marks >= 40 && marks < 50 ) {
+            grade = "D";
+        }
+        else {
+            grade = "E";
+        }
+
+        return grade;
+    }
 }
