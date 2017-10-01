@@ -66,6 +66,8 @@ public class MyCollections {
 
         System.out.println("Sum2::"+sum2);
 
+
+
        //while loop
 
         int counter = 0;
