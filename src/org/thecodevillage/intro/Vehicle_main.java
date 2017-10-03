@@ -1,6 +1,8 @@
 package src.org.thecodevillage.intro;
 
 
+import src.org.thecodevillage.common.Mydbcon;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -42,31 +44,31 @@ public class Vehicle_main {
 
 
 
-            Pupils Pupils = new Pupils();
+            Pupils pupils = new Pupils();
             System.out.println("Enter Student Name"+(q+1));
-            Pupils.setName(scanner.next());
+            pupils.setName(scanner.next());
 
             System.out.println("Enter Student  Registration No."+(q+1));
-            Pupils.setRegno(scanner.next());
+            pupils.setRegno(scanner.next());
 
             System.out.println("Enter Student Date Of Birth."+(q+1));
-            Pupils.setBirthDate(scanner.next());
+            pupils.setBirthDate(scanner.next());
 
             System.out.println("Enter Student Course"+(q+1));
-            Pupils.setCourse(scanner.next());
+            pupils.setCourse(scanner.next());
 
             System.out.println("Enter Student Java Marks"+(q+1));
-            Pupils.setJvMarks(scanner.nextInt());
+            pupils.setJvMarks(scanner.nextInt());
 
             System.out.println("Enter Student Php Marks"+(q+1));
-            Pupils.setPhMarks(scanner.nextInt());
+            pupils.setPhMarks(scanner.nextInt());
 
             System.out.println("Enter Student Python Marks"+(q+1));
-            Pupils.setPyMarks(scanner.nextInt());
+            pupils.setPyMarks(scanner.nextInt());
 
-            sumJv = PupilFunctions.add(Pupils.getJvMarks(),Pupils.getJvMarks(),Pupils.getJvMarks());
-            sumPhp = PupilFunctions.add(Pupils.getPhMarks(),Pupils.getPhMarks(),Pupils.getPhMarks());
-            sumPyt = PupilFunctions.add(Pupils.getPyMarks(),Pupils.getPyMarks(),Pupils.getPyMarks());
+            sumJv = PupilFunctions.add(pupils.getJvMarks(),pupils.getJvMarks(),pupils.getJvMarks());
+            sumPhp = PupilFunctions.add(pupils.getPhMarks(),pupils.getPhMarks(),pupils.getPhMarks());
+            sumPyt = PupilFunctions.add(pupils.getPyMarks(),pupils.getPyMarks(),pupils.getPyMarks());
 
             avgJv  = PupilFunctions.avge(sumJv);
             avgPhp = PupilFunctions.avge(sumPhp);
@@ -76,7 +78,9 @@ public class Vehicle_main {
             gradesPhp = VehicleFunction.grade(avgPhp);
             gradesPyt = VehicleFunction.grade(avgPyt);
 
-            MyPupils.add(Pupils);
+            Mydbcon.insertStudent(pupils);
+            Mydbcon.viewStudent();
+            MyPupils.add(pupils);
 
         }
         System.out.println("Pupils Loop Output");
