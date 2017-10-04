@@ -3,7 +3,7 @@ package src.org.thecodevillage.intro;
 /**
  * Created by Administrator on 9/26/2017.
  */
-public class VehicleFunction {
+public class CampusFunction {
 
     public static int add(int x,int y,int z){
         return x+y+z;

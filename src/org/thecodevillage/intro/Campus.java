@@ -3,7 +3,7 @@ package src.org.thecodevillage.intro;
 /**
  * Created by Administrator on 9/26/2017.
  */
-public class Vehicle {
+public class Campus {
 
     public String getName() {
         return Name;

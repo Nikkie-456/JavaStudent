@@ -10,11 +10,11 @@ import java.util.Scanner;
 /**
  * Created by Administrator on 9/26/2017.
  */
-public class Vehicle_main {
+public class Campus_main {
 
     public static void main(String[] args){
 
-        List<Pupils> MyPupils = new ArrayList<>();
+        List<College> MyPupils = new ArrayList<>();
         int noOfPupils =0;
         Scanner  scanner= new Scanner(System.in);
         System.out.println("Enter Number Of Students");
@@ -44,7 +44,7 @@ public class Vehicle_main {
 
 
 
-            Pupils pupils = new Pupils();
+            College pupils = new College();
             System.out.println("Enter Student Name"+(q+1));
             pupils.setName(scanner.next());
 
@@ -66,17 +66,17 @@ public class Vehicle_main {
             System.out.println("Enter Student Python Marks"+(q+1));
             pupils.setPyMarks(scanner.nextInt());
 
-            sumJv = PupilFunctions.add(pupils.getJvMarks(),pupils.getJvMarks(),pupils.getJvMarks());
-            sumPhp = PupilFunctions.add(pupils.getPhMarks(),pupils.getPhMarks(),pupils.getPhMarks());
-            sumPyt = PupilFunctions.add(pupils.getPyMarks(),pupils.getPyMarks(),pupils.getPyMarks());
+            sumJv = CollegeFunctions.add(pupils.getJvMarks(),pupils.getJvMarks(),pupils.getJvMarks());
+            sumPhp = CollegeFunctions.add(pupils.getPhMarks(),pupils.getPhMarks(),pupils.getPhMarks());
+            sumPyt = CollegeFunctions.add(pupils.getPyMarks(),pupils.getPyMarks(),pupils.getPyMarks());
 
-            avgJv  = PupilFunctions.avge(sumJv);
-            avgPhp = PupilFunctions.avge(sumPhp);
-            avgPyt = PupilFunctions.avge(sumPyt);
+            avgJv  = CollegeFunctions.avge(sumJv);
+            avgPhp = CollegeFunctions.avge(sumPhp);
+            avgPyt = CollegeFunctions.avge(sumPyt);
 
-            gradesJv = VehicleFunction.grade(avgJv);
-            gradesPhp = VehicleFunction.grade(avgPhp);
-            gradesPyt = VehicleFunction.grade(avgPyt);
+            gradesJv = CampusFunction.grade(avgJv);
+            gradesPhp = CampusFunction.grade(avgPhp);
+            gradesPyt = CampusFunction.grade(avgPyt);
 
             Mydbcon.insertStudent(pupils);
             Mydbcon.viewStudent();

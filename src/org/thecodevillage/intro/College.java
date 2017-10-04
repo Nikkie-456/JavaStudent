@@ -3,7 +3,7 @@ package src.org.thecodevillage.intro;
 /**
  * Created by Administrator on 9/24/2017.
  */
-public class Pupils {
+public class College {
 
     int Marks;
 

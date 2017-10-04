@@ -1,6 +1,7 @@
 package src.org.thecodevillage.common;
 
-import src.org.thecodevillage.intro.Pupils;
+import src.org.thecodevillage.intro.College;
+import src.org.thecodevillage.intro.College;
 
 import javax.xml.transform.Result;
 import java.sql.*;
@@ -25,7 +26,7 @@ public class Mydbcon {
             i.printStackTrace();
         }
 
-         viewStudent();
+         //viewStudent();
         //updateStudent();
         //deleteStudent();
         //insertStudent();
@@ -41,7 +42,8 @@ public class Mydbcon {
         Connection conn =null;
         try {
             conn = getDbConnection("jdbc:mysql://localhost:3306/students_db", "root", "");
-            String sql = "Select id,name,course,dateofbirth,registration,javamarks,phpmarks,pythonmarks from tbl_students where id in (12)";
+           // String sql = "Select id,name,course,dateofbirth,registration,javamarks,phpmarks,pythonmarks from tbl_students where id in (12)";
+            String sql = "Select * from tbl_students";
             pstmt = conn.prepareStatement(sql);
             rs_2 = pstmt.executeQuery(sql);
             while (rs_2.next()) {
@@ -116,7 +118,7 @@ public class Mydbcon {
 
     // Insert Section
 
-    public static void insertStudent(Pupils pupils) {
+    public static void insertStudent(College pupils) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = getDbConnection("jdbc:mysql://localhost:3306/students_db", "root", "");

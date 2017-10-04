@@ -1,8 +1,5 @@
 package src.org.thecodevillage.intro;
 
-import src.org.thecodevillage.common.Student1;
-import src.org.thecodevillage.common.Studentfunction;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,7 +7,7 @@ import java.util.Scanner;
 /**
  * Created by Administrator on 9/24/2017.
  */
-public class Pupils_main {
+public class College_main {
 
     public static void main (String [] args) {
 
@@ -74,8 +71,8 @@ public class Pupils_main {
         System.out.println("Enter Python Marks");
         Pupil1.setPyMarks(scanner.nextInt());
 
-        sum = PupilFunctions.add(Pupil1.getJvMarks(),Pupil1.getPhMarks(),Pupil1.getPyMarks());
-        avg = PupilFunctions.avge(sum);
+        sum = CollegeFunctions.add(Pupil1.getJvMarks(),Pupil1.getPhMarks(),Pupil1.getPyMarks());
+        avg = CollegeFunctions.avge(sum);
 
         //Second Pupil
 
@@ -105,8 +102,8 @@ public class Pupils_main {
         System.out.println("Enter Second Python Marks");
         Pupil2.setPyMarks(scanner2.nextInt());
 
-        sum_1 = PupilFunctions.add(Pupil2.getJvMarks(),Pupil2.getPhMarks(),Pupil2.getPyMarks());
-        avg_1 = PupilFunctions.avge(sum_1);
+        sum_1 = CollegeFunctions.add(Pupil2.getJvMarks(),Pupil2.getPhMarks(),Pupil2.getPyMarks());
+        avg_1 = CollegeFunctions.avge(sum_1);
 
         //Third Pupil
 
@@ -136,15 +133,15 @@ public class Pupils_main {
         System.out.println("Enter Third Python Marks");
         Pupil3.setPyMarks(scanner3.nextInt());
 
-        sum_2 = PupilFunctions.add(Pupil3.getJvMarks(),Pupil3.getPhMarks(),Pupil3.getPyMarks());
-        avg_2 = PupilFunctions.avge(sum_2);
+        sum_2 = CollegeFunctions.add(Pupil3.getJvMarks(),Pupil3.getPhMarks(),Pupil3.getPyMarks());
+        avg_2 = CollegeFunctions.avge(sum_2);
 
-        sum_3 = PupilFunctions.add(sum,sum_1,sum_2);
-        avg_3 = PupilFunctions.average(avg,avg_1,avg_2);
+        sum_3 = CollegeFunctions.add(sum,sum_1,sum_2);
+        avg_3 = CollegeFunctions.average(avg,avg_1,avg_2);
 
-        totJvMarks = PupilFunctions.add(Pupil1.getJvMarks(),Pupil2.getJvMarks(),Pupil3.getJvMarks());
-        totPhMarks = PupilFunctions.add(Pupil1.getPhMarks(),Pupil2.getPhMarks(),Pupil3.getPhMarks());
-        totPyMarks = PupilFunctions.add(Pupil1.getPyMarks(),Pupil2.getPyMarks(),Pupil3.getPyMarks());
+        totJvMarks = CollegeFunctions.add(Pupil1.getJvMarks(),Pupil2.getJvMarks(),Pupil3.getJvMarks());
+        totPhMarks = CollegeFunctions.add(Pupil1.getPhMarks(),Pupil2.getPhMarks(),Pupil3.getPhMarks());
+        totPyMarks = CollegeFunctions.add(Pupil1.getPyMarks(),Pupil2.getPyMarks(),Pupil3.getPyMarks());
 
 
 
