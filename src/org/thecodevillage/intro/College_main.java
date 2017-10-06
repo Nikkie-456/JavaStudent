@@ -47,7 +47,7 @@ public class College_main {
 
         //First Pupil
 
-        Pupils Pupil1 = new Pupils();
+        College Pupil1 = new College();
 
         System.out.println("Enter Student Name");
         Pupil1.setName(scanner.nextLine());
@@ -78,7 +78,7 @@ public class College_main {
 
         Scanner scanner2 = new Scanner(System.in);
 
-        Pupils Pupil2 = new Pupils();
+        College Pupil2 = new College();
 
         System.out.println("Enter Second Student Name");
         Pupil2.setName(scanner2.nextLine());
@@ -109,7 +109,7 @@ public class College_main {
 
         Scanner scanner3 = new Scanner(System.in);
 
-        Pupils Pupil3 = new Pupils();
+        College Pupil3 = new College();
 
         System.out.println("Enter Third Student Name");
         Pupil3.setName(scanner3.nextLine());
@@ -177,19 +177,19 @@ public class College_main {
         System.out.println("Total Average##"+avg_3);
 
 
-        Pupils javaDetails= new Pupils();
+        College javaDetails= new College();
         javaDetails.setName("Java Marks");
         javaDetails.setMarks(totJvMarks);
 
-        Pupils phpDetails = new Pupils();
+        College phpDetails = new College();
         phpDetails.setName("Php Marks");
         phpDetails.setMarks(totPhMarks);
 
-        Pupils pythonDetails = new Pupils();
+        College pythonDetails = new College();
         pythonDetails.setName("Python Marks");
         pythonDetails.setMarks(totPyMarks);
 
-        List<Pupils> myMarksList =new ArrayList<>();
+        List<College> myMarksList =new ArrayList<>();
 
         myMarksList.add(javaDetails);
         myMarksList.add(phpDetails);

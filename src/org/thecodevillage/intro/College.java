@@ -7,6 +7,16 @@ public class College {
 
     int Marks;
 
+    int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getMarks() {
         return Marks;
     }

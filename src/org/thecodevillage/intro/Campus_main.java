@@ -79,20 +79,23 @@ public class Campus_main {
             gradesPyt = CampusFunction.grade(avgPyt);
 
             Mydbcon.insertStudent(pupils);
-            Mydbcon.viewStudent();
+            Mydbcon.getMyList();
+            //Mydbcon.viewStudent();
             MyPupils.add(pupils);
+
 
         }
         System.out.println("Pupils Loop Output");
-        System.out.println("Average Java Marks##"+avgJv);
-        System.out.println("Average Php Marks##"+avgPhp);
-        System.out.println("Average  Python Marks##"+avgPyt);
-        System.out.println("Total Java Marks##"+sumJv);
-        System.out.println("Total Php Marks##"+sumPhp);
-        System.out.println("Total Python Marks##"+sumPyt);
-        System.out.println("Java Grade##"+gradesJv);
-        System.out.println("Php Grade##"+gradesPhp);
-        System.out.println("Python Grade##"+gradesPyt);
+       // System.out.println("Average Java Marks##"+avgJv);
+        System.out.println("College List##"+Mydbcon.getMyList());
+//        System.out.println("Average Php Marks##"+avgPhp);
+//        System.out.println("Average  Python Marks##"+avgPyt);
+//        System.out.println("Total Java Marks##"+sumJv);
+//        System.out.println("Total Php Marks##"+sumPhp);
+//        System.out.println("Total Python Marks##"+sumPyt);
+//        System.out.println("Java Grade##"+gradesJv);
+//        System.out.println("Php Grade##"+gradesPhp);
+//        System.out.println("Python Grade##"+gradesPyt);
         //System.out.println(MyPupils.size());
     }
 

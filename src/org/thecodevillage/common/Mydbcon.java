@@ -6,6 +6,8 @@ import src.org.thecodevillage.intro.College;
 import javax.xml.transform.Result;
 import java.sql.*;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Administrator on 9/29/2017.
@@ -74,7 +76,50 @@ public class Mydbcon {
 
         }
     }
-        // Update Section
+
+    // List Of Students
+
+
+
+    public static List<College> getMyList() {
+        ResultSet rs_3=null;
+        PreparedStatement pstmt =null;
+        Connection conn1 =null;
+        List<College> myList= new ArrayList<>();
+        try {
+            conn1 = getDbConnection("jdbc:mysql://localhost:3306/students_db", "root", "");
+            String sql = "Select * from tbl_students";
+            pstmt = conn1.prepareStatement(sql);
+            rs_3 = pstmt.executeQuery(sql);
+
+            College college= new College();
+
+            while (rs_3.next()) {
+
+                college.setId(rs_3.getInt("id"));
+                college.setName(rs_3.getString("name"));
+                college.setCourse(rs_3.getString("course"));
+                college.setRegno(rs_3.getString("registration"));
+                college.setBirthDate(rs_3.getString("dateofbirth"));
+                college.setJvMarks(rs_3.getInt("javamarks"));
+                college.setPhMarks(rs_3.getInt("phpmarks"));
+                college.setPyMarks(rs_3.getInt("pythonmarks"));
+
+                myList.add(college);
+
+            }
+
+            rs_3.close();
+
+        }
+        catch (Exception t) {
+            System.out.println(t);
+            t.printStackTrace();
+        }
+        return myList;
+    }
+
+    // Update Section
 
     public static void updateStudent(){
 
