@@ -32,6 +32,7 @@ public class Mydbcon {
         //updateStudent();
         //deleteStudent();
         //insertStudent();
+        Mydbcon.getMyList();
 
     }
 
@@ -104,6 +105,7 @@ public class Mydbcon {
                 college.setJvMarks(rs_3.getInt("javamarks"));
                 college.setPhMarks(rs_3.getInt("phpmarks"));
                 college.setPyMarks(rs_3.getInt("pythonmarks"));
+                System.out.println(college.getId() + "\t" + college.getName() + "\t" + college.getCourse() + "\t" + college.getRegno() + "\t" + college.getBirthDate() + "\t" + college.getJvMarks() + "\t" + college.getPhMarks() + "\t" + college.getPyMarks());
 
                 myList.add(college);
 
