@@ -106,7 +106,6 @@ public class Mydbcon {
                 college.setPhMarks(rs_3.getInt("phpmarks"));
                 college.setPyMarks(rs_3.getInt("pythonmarks"));
                 System.out.println(college.getId() + "\t" + college.getName() + "\t" + college.getCourse() + "\t" + college.getRegno() + "\t" + college.getBirthDate() + "\t" + college.getJvMarks() + "\t" + college.getPhMarks() + "\t" + college.getPyMarks());
-
                 myList.add(college);
 
             }

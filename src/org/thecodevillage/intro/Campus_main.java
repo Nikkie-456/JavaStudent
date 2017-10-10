@@ -87,7 +87,6 @@ public class Campus_main {
         }
         System.out.println("Pupils Loop Output");
        // System.out.println("Average Java Marks##"+avgJv);
-        System.out.println("College List##"+Mydbcon.getMyList());
 //        System.out.println("Average Php Marks##"+avgPhp);
 //        System.out.println("Average  Python Marks##"+avgPyt);
 //        System.out.println("Total Java Marks##"+sumJv);
